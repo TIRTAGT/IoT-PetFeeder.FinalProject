@@ -1,0 +1,55 @@
+#debug_console {
+	display: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	max-width: 80%;
+	border: 1px solid #ccc;
+}
+
+#debug_console div:first-child {
+	font-weight: bolder;
+	margin: 0;
+	padding: 5px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #ccc;
+}
+
+#debug_console div:last-child {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#debug_console div:last-child input {
+	width: 90%;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+#debug_console div:last-child button {
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.action_button {
+	width: 100px;
+	height: 50px;
+}
+
+.text_red {
+	color: red;
+}
+.text_yellow {
+	color: yellow;
+}
+.text_green {
+	color: green;
+}
+
+.action_buttons {
+	display: flex;
+	gap: 10px;
+}

@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "tsc: build - tsconfig.json",
+			"dependsOn": [
+				"run pre_build.sh"
+			],
+		},
+		{
+			"type": "shell",
+			"label": "run build.sh",
+			"command": "./build.sh"
+		}
+	]
+}

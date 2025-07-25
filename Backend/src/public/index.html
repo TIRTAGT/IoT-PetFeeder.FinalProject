@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PetFeeder WebApp</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<h2>PetFeeder</h2>
+	
+	<div>Status: <span id="connection_status" class="text_red">Not Connected</span></div>
+	<div>Temperature: <span id="temperature">0</span>°C</div>
+	<div>Humidity: <span id="humidity">0</span>%</div>
+	<div>Water Level: <span id="waterLevel">0</span>%</div>
+	<div>Water Pump Status: <span id="waterPumpStatus">Off</span></div>
+	<div>Food Dispenser Status: <span id="foodServoStatus">Closed</span></div>
+	<br>
+	<div class="action_buttons">
+		<button id="enable_servo" class="action_button">Dispense Food</button>
+		<button id="enable_pump" class="action_button">Fill Water</button>
+	</div>
+
+	<div id="debug_console">
+		<div>Debug Console</div>
+		<div>
+			<pre id="console_output"></pre>
+			<input type="text" id="command_input" placeholder="Enter command">
+			<br>
+			<button id="send_command">Send Command</button>
+		</div>
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+	"terminal.integrated.defaultProfile.linux": "VirtualEnv",
+	"terminal.integrated.profiles.linux": {
+		"VirtualEnv": {
+			"path": "bash",
+			"args": [
+				"--init-file",
+				"${workspaceFolder}/node_env.sh"
+			]
+		}
+	},
+}
